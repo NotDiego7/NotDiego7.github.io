@@ -32,7 +32,7 @@ uploadButton.addEventListener('click', () => {
           const response = await fetch('https://content.dropboxapi.com/2/files/upload', {
             method: 'POST',
             headers: {
-              'Authorization': 'Bearer sl.BslxW1NfPK8-Mx5yStuJY7V2QK85RzMZkKpWpzLYR7tcrqO6KkEl5ajhDMA1IURA_q47UJpeXiuLQtMa2RkCqiDjR08HYrWJLfltn_IraA18a8WdSTKXVtOzjawiomsAkzKOxKHjcfOIQkvTXvbv', 
+              'Authorization': 'Bearer sl.BslyUO7x1J4eztf3cvcwB15axP4Daw7684VSEL7cs6Q71Q5q26DrCI_j4DvPeYoiwEE-VuISwxGrCtFF5LDz8a6zalP62X_PgmPddgZ_vI0H5iI5bEbgGTcvYGRef16uJ5UhyD6u8fpuEGaguQI4', 
               'Content-Type': 'application/octet-stream',
               'Dropbox-API-Arg': JSON.stringify({
                 path: '/image.jpg',
@@ -47,7 +47,7 @@ uploadButton.addEventListener('click', () => {
           const getTemporaryLinkResponse = await fetch('https://api.dropboxapi.com/2/files/get_temporary_link', {
             method: 'POST',
             headers: {
-              'Authorization': 'Bearer sl.BslxW1NfPK8-Mx5yStuJY7V2QK85RzMZkKpWpzLYR7tcrqO6KkEl5ajhDMA1IURA_q47UJpeXiuLQtMa2RkCqiDjR08HYrWJLfltn_IraA18a8WdSTKXVtOzjawiomsAkzKOxKHjcfOIQkvTXvbv',
+              'Authorization': 'Bearer sl.BslyUO7x1J4eztf3cvcwB15axP4Daw7684VSEL7cs6Q71Q5q26DrCI_j4DvPeYoiwEE-VuISwxGrCtFF5LDz8a6zalP62X_PgmPddgZ_vI0H5iI5bEbgGTcvYGRef16uJ5UhyD6u8fpuEGaguQI4',
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({
