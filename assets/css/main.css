@@ -68,6 +68,29 @@ input, select, textarea {
 
 /* Basic */
 
+	div#ai-area {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; /* Distribute buttons evenly */
+		height: 29vh;
+	}
+
+		#send-message-button, #upload-image-button {
+			margin: auto;
+			border-radius: 2vw;
+			text-wrap: wrap;
+		}
+
+		#send-message-button {
+			width: 25vw;
+		}
+
+		#upload-image-button {
+			width: 30vw;
+			background-color: rebeccapurple;
+			
+		}
+
 	html {
 		box-sizing: border-box;
 	}
@@ -126,6 +149,10 @@ input, select, textarea {
 	p {
 		margin: 0 0 2em 0;
 	}
+
+		p#ai-body-text {
+			text-align: center;
+		}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
