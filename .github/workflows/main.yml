@@ -8,7 +8,5 @@ jobs:
     runs-on: ubuntu-latest  # Or your preferred runner
     steps:
       - uses: actions/checkout@v3
-      - run: npm install path/to/package.json  # If located in a subdirectory
-      - run: node index.js  # Or the command to run your JavaScript code
         env:
           DBX_ACCESS_TOKEN: ${{ secrets.DBX_ACCESS_TOKEN }}  # Set the secret as an environment variable
