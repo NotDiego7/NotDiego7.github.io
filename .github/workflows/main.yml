@@ -1,0 +1,13 @@
+on:  # Add this key to specify workflow triggers
+  push:  # Example trigger: run the workflow on push events
+    branches: [main]  # Specify the branches to trigger on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: node index.js
+        env:
+          DBX_ACCESS_TOKEN: ${{ secrets.DBXACCESSTOKEN }}
