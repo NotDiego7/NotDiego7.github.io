@@ -198,5 +198,3 @@ uploadButton.addEventListener('click', () => {
 //     });
 //   });
 // });
-
-// TESTING
