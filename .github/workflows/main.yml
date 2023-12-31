@@ -4,10 +4,11 @@ on:  # Define the events that trigger the workflow
   # You can add other events as needed (e.g., pull_request, schedule)
 
 jobs:
-  build:  # Or any other relevant job name
+  env-secret-injection:  # Or any other relevant job name
     runs-on: ubuntu-latest  # Or your preferred runner
     steps:
       - uses: actions/checkout@v3
+      - name: Store and Print DBX Secret
         env:
           DBXACCESSTOKEN: ${{ secrets.DBXACCESSTOKEN }}  # Set the secret as an environment variable
-          run: echo DBXACCESSTOKEN
+        run: echo '${DBXACCESSTOKEN}'
