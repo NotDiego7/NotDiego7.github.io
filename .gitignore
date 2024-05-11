@@ -1,0 +1,52 @@
+# Ignore configuration files with sensitive information
+.env
+config.ini
+secrets.yml
+credentials.json
+
+
+# Ignore build output files
+build/
+dist/
+bin/
+out/
+
+# Ignore dependency directories
+node_modules/
+vendor/
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore system and temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore generated documentation
+docs/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.cache
+
+# Ignore miscellaneous files
+*.bak
+*.tmp
+*.old

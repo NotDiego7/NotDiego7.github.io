@@ -1,0 +1,33 @@
+img#image-preview {
+    display: none;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 25%;
+    margin: auto;
+}
+
+p#body-text {
+    display: none;
+    max-width: 85vw;
+    max-height: fit-content;
+    width: auto;
+    height: auto;
+    margin: 3vh auto 3vh auto;
+    overflow: auto;
+    padding: 4vh;
+}
+
+@media (max-width: 600px) {
+    img#image-preview {
+        max-width: 65px;
+        max-height: 65px;
+    }
+
+    p#body-text {
+        margin: 2vh auto 2vh auto;
+        padding: 1vw;
+    }
+}

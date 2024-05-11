@@ -1,0 +1,38 @@
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal-content {
+    background-color: #ededed;
+    margin: 20% auto;
+    padding: 2em;
+    border: 1px solid #6d6d6d;
+    width: 50%;
+    height: auto;
+    font-size: large;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+}
+
+#close-button {
+    color: #aaa;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #ddd;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#close-button:hover {
+    background-color: #bbb;
+}

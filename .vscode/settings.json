@@ -1,4 +1,3 @@
 {
-    "livePreview.defaultPreviewPath": "/index.html",
-    "cmake.configureOnOpen": false
+    "livePreview.defaultPreviewPath": "/ai.html"
 }

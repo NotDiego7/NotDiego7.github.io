@@ -1,0 +1,9 @@
+#image-input {
+    border: 1px solid black;
+    cursor: pointer;
+    width: 210px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

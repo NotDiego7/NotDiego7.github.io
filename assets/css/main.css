@@ -46,7 +46,7 @@ table {
 }
 
 body {
-	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
 mark {
@@ -66,30 +66,8 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Basic */
 
-	div#ai-area {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between; /* Distribute buttons evenly */
-		height: 29vh;
-	}
-
-		#send-message-button, #upload-image-button {
-			margin: auto;
-			border-radius: 2vw;
-			text-wrap: wrap;
-		}
-
-		#send-message-button {
-			width: 25vw;
-		}
-
-		#upload-image-button {
-			width: 30vw;
-			background-color: rebeccapurple;
-			
-		}
+	/* Main */
 
 	html {
 		box-sizing: border-box;
@@ -116,7 +94,6 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
@@ -150,9 +127,6 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-		p#ai-body-text {
-			text-align: center;
-		}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
@@ -2857,7 +2831,7 @@ input, select, textarea {
 		border-radius: 4px;
 		border: 0;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-		color: #ffffff !important;
+		color: #ffffff; /* previously set to: !important */
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
@@ -2877,7 +2851,7 @@ input, select, textarea {
 		.button:hover,
 		.button:active {
 			box-shadow: inset 0 0 0 1px #e44c65;
-			color: #e44c65 !important;
+			color: #e44c65; /* previously set to: !important */
 		}
 
 		input[type="submit"]:active,
@@ -2921,7 +2895,7 @@ input, select, textarea {
 		.button.primary {
 			background-color: #e44c65;
 			box-shadow: none;
-			color: #ffffff !important;
+			color: #ffffff !important; /* previously set to: !important */
 		}
 
 			input[type="submit"].primary:hover,
@@ -2946,8 +2920,8 @@ input, select, textarea {
 		.button.disabled,
 		.button:disabled {
 			background-color: rgba(255, 255, 255, 0.3) !important;
-			box-shadow: none !important;
-			color: #ffffff !important;
+			box-shadow: none;
+			color: #ffffff;
 			cursor: default;
 			opacity: 0.25;
 		}
@@ -3520,6 +3494,7 @@ input, select, textarea {
 				display: inline-block;
 				vertical-align: middle;
 			}
+
 
 				#banner .content header h2 {
 					font-size: 2.5em;
